@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex01</title>
+    <style>
+        .container:nth-child(1){
+            background-color: yellow;
+        }
+        .container:nth-child(2){
+            background-color: lightgreen;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Container1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Previous.</p>
+        <p id="item1">item 1</p>
+        <p>Next.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="container">
+        <h1>Container2</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+
+        const item1 = document.querySelector('#item1');
+        item1.style.backgroundColor = 'blue';
+        item1.style.color = '#fff';
+        
+    </script>
+</body>
+</html>
